@@ -1,0 +1,648 @@
+@font-face {
+    font-family: runescape_chat_bold_07regular;
+    src: url('/Fonts/RuneScape-Chat-Bold-07.ttf');
+}
+
+@keyframes wave {
+    0% {
+      transform: translateY(0);
+    }
+    25% {
+      transform: translateY(5px);
+    }
+    50% {
+      transform: translateY(0);
+    }
+    75% {
+      transform: translateY(-5px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  @keyframes wave {
+    0% {
+      transform: translateY(0);
+    }
+    25% {
+      transform: translateY(5px);
+    }
+    50% {
+      transform: translateY(0);
+    }
+    75% {
+      transform: translateY(-5px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  @keyframes scroll {
+    0% {
+      text-indent: 500px;
+    }
+    100% {
+      text-indent: -20em;
+    }
+  }
+  @keyframes scroll {
+    0% {
+      text-indent: 500px;
+    }
+    100% {
+      text-indent: -20em;
+    }
+  }
+  @keyframes slide {
+    0% {
+      top: -1.5em;
+    }
+    10%, 90% {
+      top: 0;
+    }
+    100% {
+      top: 1.5em;
+    }
+  }
+  @keyframes slide {
+    10% {
+      top: -1.5em;
+    }
+    30%, 90% {
+      top: 2.4em;
+    }
+    100% {
+      top: 4.4em;
+    }
+  }
+  @keyframes flash1 {
+    0% {
+      color: #FF0000;
+    }
+    50% {
+      color: #ff0;
+    }
+  }
+  @keyframes flash1 {
+    0% {
+      color: #FF0000;
+    }
+    50% {
+      color: #ff0;
+    }
+  }
+  @keyframes flash2 {
+    0% {
+      color: #0000FF;
+    }
+    50% {
+      color: #00FFFF;
+    }
+  }
+  @keyframes flash2 {
+    0% {
+      color: #0000FF;
+    }
+    50% {
+      color: #00FFFF;
+    }
+  }
+  @keyframes flash3 {
+    0% {
+      color: #00B000;
+    }
+    50% {
+      color: #80FF80;
+    }
+  }
+  @keyframes flash3 {
+    0% {
+      color: #00B000;
+    }
+    50% {
+      color: #80FF80;
+    }
+  }
+  @keyframes glow1 {
+    0% {
+      color: #FF0000;
+    }
+    33% {
+      color: #00B000;
+    }
+    66% {
+      color: #0000FF;
+    }
+    100% {
+      color: #FF0000;
+    }
+  }
+  @keyframes glow1 {
+    0% {
+      color: #FF0000;
+    }
+    33% {
+      color: #00B000;
+    }
+    66% {
+      color: #0000FF;
+    }
+    100% {
+      color: #FF0000;
+    }
+  }
+  @keyframes glow2 {
+    0% {
+      color: #FF0000;
+    }
+    33% {
+      color: #800080;
+    }
+    66% {
+      color: #0000FF;
+    }
+    100% {
+      color: #FF0000;
+    }
+  }
+  @keyframes glow2 {
+    0% {
+      color: #FF0000;
+    }
+    33% {
+      color: #800080;
+    }
+    66% {
+      color: #0000FF;
+    }
+    100% {
+      color: #FF0000;
+    }
+  }
+  @keyframes glow3 {
+    0% {
+      color: #FFFFFF;
+    }
+    25% {
+      color: #00B000;
+    }
+    50% {
+      color: #FFFFFF;
+    }
+    67.5% {
+      color: #00FFFF;
+    }
+    75% {
+      color: #0000FF;
+    }
+    100% {
+      color: #FFFFFF;
+    }
+  }
+  @keyframes glow3 {
+    0% {
+      color: #FFFFFF;
+    }
+    25% {
+      color: #00B000;
+    }
+    50% {
+      color: #FFFFFF;
+    }
+    67.5% {
+      color: #00FFFF;
+    }
+    75% {
+      color: #0000FF;
+    }
+    100% {
+      color: #FFFFFF;
+    }
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #004882;
+}
+
+.wrapper {
+    display: flex;
+}
+/* span {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: runescape_chat_bold_07regular;
+    font-size: 40px;
+    color: white;
+} */
+
+.heading {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: runescape_chat_bold_07regular;
+    font-size: 40px;
+    color: #ffff00;
+    overflow: hidden;
+    padding: 0.5em 0;
+}
+
+.tekstikentta {
+  position: absolute;
+  top: 33%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0 0 20px 0; /* padding: 0 0 20px 0; KATO TÄÄ uusiks */
+}
+
+.input::placeholder {
+  color: rgb(204, 197, 197);
+  font-size: 20px;
+}
+
+.tekstikentta input {
+  background-color: #0563af;
+    color: white;
+    margin: 5px 5px 0 0;
+    padding: 12px;
+    width: 350px;
+    border: none;
+    font-size: 20px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    -webkit-appearance: button;
+    appearance: button;
+    outline: none;
+}
+
+.btn:hover,
+.btn:focus {
+  box-shadow: inset 0 0 0 2em var(--hover);
+}
+
+.btn {
+  --color: #ffffff;
+  --hover: #0e76ca;
+}
+
+button {
+  color: var(--color);
+  transition: 0.25s;
+  position: absolute;
+  top: 0;
+  left: 100%;
+}
+button:hover, button:focus {
+  border-color: var(--hover);
+  color: #ffffff;
+}
+
+button {
+  background: none;
+  border: 2px solid;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
+}
+
+.valinta {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.valinta select {
+    background-color: #0563af;
+    color: white;
+    padding: 12px;
+    width: 350px;
+    border: none;
+    font-size: 20px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    -webkit-appearance: button;
+    appearance: button;
+    outline: none;
+}
+
+.valinta::before {
+    content: "\25BC";
+    /* font-family: 'runescape_chat_bold_07regular'; */
+    position: absolute;
+    top: 10;
+    right: 0;
+    width: 20%;
+    height: 100%;
+    text-align: center;
+    line-height: 45px;
+    color: white;
+    background-color: rgba(255,255,255,0.1);
+    pointer-events: none;
+}
+
+.valinta:hover::before {
+    color: rgba(255,255,255,0.6);
+    background-color: rgba(255,255,255,0.2);
+}
+
+.valinta select option {
+    padding: 30px;
+}
+
+.heading .char1 {
+  display: inline-block;
+  -webkit-animation: wave 0.66s linear infinite -50ms;
+          animation: wave 0.66s linear infinite -50ms;
+}
+.heading .char2 {
+  display: inline-block;
+  -webkit-animation: wave 0.66s linear infinite -100ms;
+          animation: wave 0.66s linear infinite -100ms;
+}
+.heading .char3 {
+  display: inline-block;
+  -webkit-animation: wave 0.66s linear infinite -150ms;
+          animation: wave 0.66s linear infinite -150ms;
+}
+.heading .char4 {
+  display: inline-block;
+  -webkit-animation: wave 0.66s linear infinite -200ms;
+          animation: wave 0.66s linear infinite -200ms;
+}
+.heading .char5 {
+  display: inline-block;
+  -webkit-animation: wave 0.66s linear infinite -250ms;
+          animation: wave 0.66s linear infinite -250ms;
+}
+.heading .char6 {
+  display: inline-block;
+  -webkit-animation: wave 0.66s linear infinite -300ms;
+          animation: wave 0.66s linear infinite -300ms;
+}
+.heading .char7 {
+  display: inline-block;
+  -webkit-animation: wave 0.66s linear infinite -350ms;
+          animation: wave 0.66s linear infinite -350ms;
+}
+.heading .char8 {
+  display: inline-block;
+  -webkit-animation: wave 0.66s linear infinite -400ms;
+          animation: wave 0.66s linear infinite -400ms;
+}
+.heading .char9 {
+  display: inline-block;
+  -webkit-animation: wave 0.66s linear infinite -450ms;
+          animation: wave 0.66s linear infinite -450ms;
+}
+.heading .char10 {
+  display: inline-block;
+  -webkit-animation: wave 0.66s linear infinite -500ms;
+          animation: wave 0.66s linear infinite -500ms;
+}
+.heading .char11 {
+  display: inline-block;
+  -webkit-animation: wave 0.66s linear infinite -550ms;
+          animation: wave 0.66s linear infinite -550ms;
+}
+.heading .char12 {
+  display: inline-block;
+  -webkit-animation: wave 0.66s linear infinite -600ms;
+          animation: wave 0.66s linear infinite -600ms;
+}
+.heading .char13 {
+  display: inline-block;
+  -webkit-animation: wave 0.66s linear infinite -650ms;
+          animation: wave 0.66s linear infinite -650ms;
+}
+.heading .char14 {
+  display: inline-block;
+  -webkit-animation: wave 0.66s linear infinite -700ms;
+          animation: wave 0.66s linear infinite -700ms;
+}
+.heading .char15 {
+  display: inline-block;
+  -webkit-animation: wave 0.66s linear infinite -750ms;
+          animation: wave 0.66s linear infinite -750ms;
+}
+.heading .char16 {
+  display: inline-block;
+  -webkit-animation: wave 0.66s linear infinite -800ms;
+          animation: wave 0.66s linear infinite -800ms;
+}
+.heading .char17 {
+  display: inline-block;
+  -webkit-animation: wave 0.66s linear infinite -850ms;
+          animation: wave 0.66s linear infinite -850ms;
+}
+.heading .char18 {
+  display: inline-block;
+  -webkit-animation: wave 0.66s linear infinite -900ms;
+          animation: wave 0.66s linear infinite -900ms;
+}
+.heading .char19 {
+  display: inline-block;
+  -webkit-animation: wave 0.66s linear infinite -950ms;
+          animation: wave 0.66s linear infinite -950ms;
+}
+.heading .char20 {
+  display: inline-block;
+  -webkit-animation: wave 0.66s linear infinite -1000ms;
+          animation: wave 0.66s linear infinite -1000ms;
+}
+.heading .char21 {
+  display: inline-block;
+  -webkit-animation: wave 0.66s linear infinite -1050ms;
+          animation: wave 0.66s linear infinite -1050ms;
+}
+.heading .char22 {
+  display: inline-block;
+  -webkit-animation: wave 0.66s linear infinite -1100ms;
+          animation: wave 0.66s linear infinite -1100ms;
+}
+.heading .char23 {
+  display: inline-block;
+  -webkit-animation: wave 0.66s linear infinite -1150ms;
+          animation: wave 0.66s linear infinite -1150ms;
+}
+.heading .char24 {
+  display: inline-block;
+  -webkit-animation: wave 0.66s linear infinite -1200ms;
+          animation: wave 0.66s linear infinite -1200ms;
+}
+.heading .char25 {
+  display: inline-block;
+  -webkit-animation: wave 0.66s linear infinite -1250ms;
+          animation: wave 0.66s linear infinite -1250ms;
+}
+.heading .char26 {
+  display: inline-block;
+  -webkit-animation: wave 0.66s linear infinite -1300ms;
+          animation: wave 0.66s linear infinite -1300ms;
+}
+.heading .char27 {
+  display: inline-block;
+  -webkit-animation: wave 0.66s linear infinite -1350ms;
+          animation: wave 0.66s linear infinite -1350ms;
+}
+.heading .char28 {
+  display: inline-block;
+  -webkit-animation: wave 0.66s linear infinite -1400ms;
+          animation: wave 0.66s linear infinite -1400ms;
+}
+.heading .char29 {
+  display: inline-block;
+  -webkit-animation: wave 0.66s linear infinite -1450ms;
+          animation: wave 0.66s linear infinite -1450ms;
+}
+.heading .char30 {
+  display: inline-block;
+  -webkit-animation: wave 0.66s linear infinite -1500ms;
+          animation: wave 0.66s linear infinite -1500ms;
+}
+.heading .char31 {
+  display: inline-block;
+  -webkit-animation: wave 0.66s linear infinite -1550ms;
+          animation: wave 0.66s linear infinite -1550ms;
+}
+.heading .char32 {
+  display: inline-block;
+  -webkit-animation: wave 0.66s linear infinite -1600ms;
+          animation: wave 0.66s linear infinite -1600ms;
+}
+.heading .char33 {
+  display: inline-block;
+  -webkit-animation: wave 0.66s linear infinite -1650ms;
+          animation: wave 0.66s linear infinite -1650ms;
+}
+.heading .char34 {
+  display: inline-block;
+  -webkit-animation: wave 0.66s linear infinite -1700ms;
+          animation: wave 0.66s linear infinite -1700ms;
+}
+.heading .char35 {
+  display: inline-block;
+  -webkit-animation: wave 0.66s linear infinite -1750ms;
+          animation: wave 0.66s linear infinite -1750ms;
+}
+.heading .char36 {
+  display: inline-block;
+  -webkit-animation: wave 0.66s linear infinite -1800ms;
+          animation: wave 0.66s linear infinite -1800ms;
+}
+.heading .char37 {
+  display: inline-block;
+  -webkit-animation: wave 0.66s linear infinite -1850ms;
+          animation: wave 0.66s linear infinite -1850ms;
+}
+.heading .char38 {
+  display: inline-block;
+  -webkit-animation: wave 0.66s linear infinite -1900ms;
+          animation: wave 0.66s linear infinite -1900ms;
+}
+.heading .char39 {
+  display: inline-block;
+  -webkit-animation: wave 0.66s linear infinite -1950ms;
+          animation: wave 0.66s linear infinite -1950ms;
+}
+.heading .char40 {
+  display: inline-block;
+  -webkit-animation: wave 0.66s linear infinite -2000ms;
+          animation: wave 0.66s linear infinite -2000ms;
+}
+.heading .char41 {
+  display: inline-block;
+  -webkit-animation: wave 0.66s linear infinite -2050ms;
+          animation: wave 0.66s linear infinite -2050ms;
+}
+.heading .char42 {
+  display: inline-block;
+  -webkit-animation: wave 0.66s linear infinite -2100ms;
+          animation: wave 0.66s linear infinite -2100ms;
+}
+.heading .char43 {
+  display: inline-block;
+  -webkit-animation: wave 0.66s linear infinite -2150ms;
+          animation: wave 0.66s linear infinite -2150ms;
+}
+.heading .char44 {
+  display: inline-block;
+  -webkit-animation: wave 0.66s linear infinite -2200ms;
+          animation: wave 0.66s linear infinite -2200ms;
+}
+.heading .char45 {
+  display: inline-block;
+  -webkit-animation: wave 0.66s linear infinite -2250ms;
+          animation: wave 0.66s linear infinite -2250ms;
+}
+.heading .char46 {
+  display: inline-block;
+  -webkit-animation: wave 0.66s linear infinite -2300ms;
+          animation: wave 0.66s linear infinite -2300ms;
+}
+.heading .char47 {
+  display: inline-block;
+  -webkit-animation: wave 0.66s linear infinite -2350ms;
+          animation: wave 0.66s linear infinite -2350ms;
+}
+.heading .char48 {
+  display: inline-block;
+  -webkit-animation: wave 0.66s linear infinite -2400ms;
+          animation: wave 0.66s linear infinite -2400ms;
+}
+.heading .char49 {
+  display: inline-block;
+  -webkit-animation: wave 0.66s linear infinite -2450ms;
+          animation: wave 0.66s linear infinite -2450ms;
+}
+.heading .char50 {
+  display: inline-block;
+  -webkit-animation: wave 0.66s linear infinite -2500ms;
+          animation: wave 0.66s linear infinite -2500ms;
+}
+
+.scroll {
+  display: inline-block;
+  white-space: nowrap;
+  -webkit-animation: scroll 1s infinite linear;
+          animation: scroll 6s infinite linear;
+}
+
+.slide {
+  -webkit-animation: slide 3s linear;
+          animation: slide 3s linear infinite;
+  position: relative;
+  top: -3rem;
+}
+
+.flash1 {
+  -webkit-animation: flash1 0.45s steps(1, end) infinite;
+          animation: flash1 0.45s steps(1, end) infinite;
+}
+
+.flash2 {
+  -webkit-animation: flash2 0.45s steps(1, end) infinite;
+          animation: flash2 0.45s steps(1, end) infinite;
+}
+
+.flash3 {
+  -webkit-animation: flash3 0.45s steps(1, end) infinite;
+          animation: flash3 0.45s steps(1, end) infinite;
+}
+
+.glow1 {
+  -webkit-animation: glow1 3s linear infinite;
+          animation: glow1 3s linear infinite;
+}
+
+.glow2 {
+  -webkit-animation: glow2 3s linear infinite;
+          animation: glow2 3s linear infinite;
+}
+
+.glow3 {
+  -webkit-animation: glow3 3s linear infinite;
+          animation: glow3 3s linear infinite;
+}
